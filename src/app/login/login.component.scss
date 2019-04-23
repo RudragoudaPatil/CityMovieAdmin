@@ -1,0 +1,30 @@
+
+ion-item{
+    --background:none;
+}
+
+ion-content{
+    --background: url('../../assets/background.jpg')
+    
+}
+ion-label{
+   // font-weight: bold; 
+   // font-size: 50px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+ion-card{
+    margin-top: 40px; 
+    background-color: #fff;
+}
+
+padding{
+   margin-top: 40px; 
+}
+ion-title{
+  //  background-color: #4547b4;
+    color:black;
+    background-attachment: fixed;
+    text-align: center;
+    text-justify: auto
+   // background-position: 100%;
+}

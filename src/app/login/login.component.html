@@ -1,0 +1,30 @@
+
+<ion-content> 
+  <ion-card> 
+   <ion-item >
+       <ion-title>Login</ion-title>
+   </ion-item>
+   <ion-item>
+       <ion-label position="floating" >
+           <ion-icon name="contact"  color="danger" >
+       </ion-icon> Enter UserName</ion-label>
+         <ion-input [(ngModel)]="customer.name"></ion-input>
+   </ion-item>
+   <ion-item>
+       
+        <ion-label position="floating"><ion-icon name="lock"  color="danger"></ion-icon> Enter Password</ion-label>
+           <ion-input  [(ngModel)]="customer.password"></ion-input>
+   </ion-item>
+   <ion-grid>
+     <ion-row>
+       <ion-col text-center>
+         <ion-button color="primary" (click)="onLogin(customer)" >Login</ion-button>
+         <ion-button color="warning" (click)="onRegister()">SignUp</ion-button>
+
+       </ion-col>
+       </ion-row>
+       </ion-grid>
+       <h6>&nbsp;Forgot Your Password ?<a href="/forgotpassword" style="color:blue" >Click Here..</a></h6>
+      </ion-card>
+</ion-content>
+

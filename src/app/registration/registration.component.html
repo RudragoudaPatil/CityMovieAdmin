@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            REGISTER
+        </ion-title>
+       </ion-toolbar>
+</ion-header>
+        <ion-content padding>
+          <ion-card>
+             <!-- <ion-item>
+                          <ion-label position="floating">Id</ion-label>
+                                <ion-input type="text" name="name" [(ngModel)]="customer.id" ></ion-input>
+                            </ion-item> -->
+                       <ion-item>
+                          <ion-label position="floating">Username</ion-label>
+                                <ion-input type="text" name="name" [(ngModel)]="customer.name" ></ion-input>
+                            </ion-item>
+                            <ion-item>
+                              <ion-label position="floating">Email</ion-label>
+                                <ion-input type="text" name="email" [(ngModel)]="customer.email" ></ion-input>
+                              </ion-item>
+                              <ion-item>
+                                <ion-label position="floating">Password</ion-label>
+                                  <ion-input type="text" name="email" [(ngModel)]="customer.password" ></ion-input>
+                                </ion-item>
+                              <ion-item>
+                            <ion-label position="floating">Phone</ion-label>
+                                <ion-input type="text" name="phone" [(ngModel)]="customer.phone" ></ion-input>
+                            </ion-item>
+                            <ion-item>
+                            <ion-label position="floating">Address</ion-label>
+                                <ion-input type="text" name="address" [(ngModel)]="customer.address" ></ion-input>
+                            </ion-item>
+          <ion-button color="primary"  (click)="addRegistration(customer)" sise="medium">SignUp</ion-button>
+        </ion-card>
+        </ion-content>

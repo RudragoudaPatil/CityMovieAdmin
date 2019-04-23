@@ -1,0 +1,49 @@
+
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>
+              Add Movies
+          </ion-title>
+         </ion-toolbar>
+  </ion-header>
+          <ion-content padding>
+            <ion-card>
+                         <ion-item>
+                            <ion-label position="floating">Movie Name</ion-label>
+                                  <ion-input type="text" name="name" [(ngModel)]="movie.name" ></ion-input>
+                              </ion-item>
+                              <ion-item>
+                                <ion-label position="floating">Year</ion-label>
+                                  <ion-input type="text" name="year" [(ngModel)]="movie.year" ></ion-input>
+                                </ion-item>
+                                <ion-item>
+                                  <ion-label position="floating">Movie Image</ion-label>
+                                    <ion-input type="text" name="image" [(ngModel)]="movie.image_url" ></ion-input>
+                                  </ion-item>
+                                <ion-item>
+                              <ion-label position="floating">Movie Date</ion-label>
+                                  <ion-input type="date" name="date" [(ngModel)]="movie.date" ></ion-input>
+                              </ion-item>
+                              <ion-item>
+                              <ion-label position="floating">Production House</ion-label>
+                                  <ion-input type="text" name="production_house" [(ngModel)]="movie.production_house" ></ion-input>
+                              </ion-item>
+                              <ion-item>
+                                  <ion-label position="floating">Movie Rating</ion-label>
+                                      <ion-input type="text" name="rate" [(ngModel)]="movie.rating" ></ion-input>
+                                  </ion-item>
+                                  <ion-item>
+                                      <ion-label position="floating">Movie Type</ion-label>
+                                          <ion-input type="text" name="rating" [(ngModel)]="movie.type" ></ion-input>
+                                      </ion-item>
+                                      <ion-item>
+                                          <ion-label position="floating">Movie Language</ion-label>
+                                              <ion-input type="text" name="language" [(ngModel)]="movie.language" ></ion-input>
+                                          </ion-item>
+
+            <ion-button color="primary"  (click)="addMovies(movie)" sise="medium">Add Movie</ion-button>
+          </ion-card>
+          </ion-content>
